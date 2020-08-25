@@ -1,0 +1,14 @@
+<div class="row mt-5">
+
+  <div class="col-12 movieheaderwrapper">
+    <h2>MOVIES</h2>
+  </div>
+</div>
+
+
+
+<div class="row mt-3">
+  <div class="col-6 col-md-4 col-lg-3 p-1" *ngFor="let p of products">
+    <app-print-product [product]="p"></app-print-product>
+  </div>
+</div>

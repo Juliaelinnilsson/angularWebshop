@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-12">
+    <p>
+      <a
+        [routerLink]="['/']"
+        routerLinkActive="router-link-active"
+        class="gobacklink"
+        >&#9667; Back</a
+      >
+    </p>
+  </div>
+</div>
+
+<div class="row movieheaderwrapper">
+  <div class="col-12">
+    <h2>CART</h2>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-6">
+    <div class="row">
+      <div class="col-12" *ngFor="let c of cart">
+        <app-print-cart #cart [cart]="c" > </app-print-cart>
+        <button (click)="deleteProduct(cart.cart)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <p>Your amount: {{ totalPrice }} SEK</p>
+    <div class="row mt-3"></div>
+    <div>
+      <button class="btn btn-light"><a routerLink="/checkout">Checkout</a></button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+.errorwrapper {
+  text-align: center;
+  .errortext {
+    font-size: 50pt;
+    color: white;
+  }
+  .whiteerrortext {
+    color: white;
+
+    .startpagelink {
+      color: pink;
+      text-decoration: underline;
+    }
+  }
+}

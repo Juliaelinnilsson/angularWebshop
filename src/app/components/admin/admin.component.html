@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-12">
+    <h1>ADMIN</h1>
+  </div>
+</div>
+<div class="row movieheaderwrapper">
+  <div class="col-12">
+    <h2>Orders</h2>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-12" *ngFor="let o of orders">
+    <app-order-admin [order]="o"></app-order-admin>
+  </div>
+</div>
